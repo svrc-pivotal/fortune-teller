@@ -2,9 +2,7 @@ eureka:
   instance:
     securePort: 443
     securePortEnabled: true
-    statusPageUrl: https://${eureka.instance.hostname}/info
-    healthCheckUrl: https://${eureka.instance.hostname}/health
-    homePageUrl: https://${eureka.instance.hostname}/
+    nonSecurePortEnabled: false
     
 fortune:
   fallbackFortune: Your future is... curious!
