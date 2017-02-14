@@ -1,7 +1,10 @@
-eureka
-  instance
+eureka:
+  instance:
     securePort: 443
     securePortEnabled: true
-
+    statusPageUrl: https://${eureka.hostname}/info
+    healthCheckUrl: https://${eureka.hostname}/health
+    homePageUrl: https://${eureka.hostname}/
+    
 fortune:
   fallbackFortune: Your future is... curious!
